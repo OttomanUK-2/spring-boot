@@ -24,3 +24,15 @@ allprojects {
 		resolutionStrategy.cacheChangingModulesFor 0, "minutes"
 	}
 }
+
+plugins {
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "OttomanUK-2_spring-boot"
+    property "sonar.organization", "ottomanuk-2"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
